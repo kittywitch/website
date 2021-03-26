@@ -1,0 +1,27 @@
+name: kittywit.ch
+description: kat's website
+author:
+  name: kat
+  twitter: floofykath
+
+permalink: /blog/:year/:title:output_ext
+url: https://kittywit.ch
+baseurl: ''
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - gemset.nix
+  - .envrc
+  - shell.nix
+
+feed:
+  path: atom.xml
+  tags: true
+  excerpt_only: true
+
+kramdown:
+  smart_quotes: apos,apos,quot,quot
+  typographic_symbols:
+    hellip: '…'

@@ -1,0 +1,56 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 100%;
+	min-height: 100%;
+
+	padding: 0;
+	margin: 0;
+
+	background: $base00;
+	color: $base05;
+
+	font: 100%/1.5 sans-serif;
+	
+	line-height: 1.5;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: $responsive_width;
+	width: 100%;
+
+	padding: 0 1rem;
+	margin: 0 auto;
+}
+
+main {
+	padding: 1rem;
+}
+
+a {
+	color: $base09;
+	text-decoration: none;
+
+	&:focus, &:hover {
+		color: $base0A;
+		text-decoration: underline;
+	}
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+
+	margin: 0 auto;
+	padding: 2px;
+	
+	background: $base01;
+	border: 2px solid $base05;
+}

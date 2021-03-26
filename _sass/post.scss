@@ -1,0 +1,24 @@
+.blog-post-list {
+	time {
+		&:before {
+			content: ' (';
+		}
+
+		&:after {
+			content: ') ';
+		}
+	}
+}
+
+.post-header, .post-footer {
+	margin: 1em 0;
+	padding: 0.5em 0;
+}
+
+.post-header {
+	border-bottom: 2px solid $base01;
+}
+
+.post-footer {
+	border-top: 2px solid $base01;
+}

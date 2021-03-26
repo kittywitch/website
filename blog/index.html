@@ -1,0 +1,14 @@
+---
+title: blog
+layout: page
+---
+
+<ul class="blog-post-list">
+{% for post in site.posts %}
+	<li>
+		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+		<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%F" }}</time>
+	</li>
+{% endfor %}
+</ul>
+
