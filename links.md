@@ -6,7 +6,7 @@ permalink: /links/
 
 ## contact 
 
-<small>pgp: [01F50A29D4AA91175A11BDB17248991EFA8EFBEE](./public.key)</small>
+<small>pgp: [01F50A29D4AA91175A11BDB17248991EFA8EFBEE](../public.key)</small>
 
 * **matrix:** [@kat:kittywit.ch](https://matrix.to/#/@kat:kittywit.ch)
 * **email:** [kat@kittywit.ch](mailto:kat@kittywit.ch)
