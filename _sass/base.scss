@@ -54,3 +54,12 @@ img {
 	background: $base01;
 	border: 2px solid $base05;
 }
+
+img#logo {
+	background: none;
+	border: none;
+	width: 30%;
+	display: block;
+	max-width: 512px;
+	margin: 0 auto;
+}
