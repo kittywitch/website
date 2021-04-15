@@ -179,7 +179,7 @@ dl.themed {
 dl.inline {
 	display: grid;
 	margin: 0;
-	grid-template-columns: max-content auto;
+	grid-template-columns: minmax(8.5rem, max-content);
 		dt {
 			grid-column-start: 1;
 		}
@@ -226,6 +226,14 @@ a#home {
 }
 
 @media only screen and (max-width: 800px) {
+	section#identity-summary dl {
+		display: block;
+
+		div:not(:last-child) {
+			border-right: none;
+		}
+	}
+
 	#avatar {
 		float: none;
 		max-width: 100%;
