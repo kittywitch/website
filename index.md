@@ -7,7 +7,9 @@ title: kat
 <main id="front-page" class="container clearfix">
     <img src="avatar.jpg" id="avatar"/>
 
-    <img src="logo.png" id="logo"/><h1>katrin "kat" witch</h1> 
+    <div id="logo-wrapper">
+        <img src="logo.png" id="logo"/><h1>katrin "kat" witch</h1> 
+    </div>
 
     <section id="identity-summary">
         <dl>

@@ -224,3 +224,18 @@ a#home {
 	margin-right: .25em;
 	display: inline;
 }
+
+@media only screen and (max-width: 800px) {
+	#avatar {
+		float: none;
+		max-width: 100%;
+		margin: 0 auto 1em auto;
+		display: block;
+	}
+
+	#logo-wrapper {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
