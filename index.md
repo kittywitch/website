@@ -86,9 +86,9 @@ title: kat
             <dt>Fediverse <i class="fab fa-mastodon"></i></dt>
             <dd><a href="https://vulpine.club/@kat">@kat@vulpine.club</a></dd>
             <dt>Twitter <i class="fab fa-twitter"></i></dt>
-            <dd><a href="https://twitter.com/floofykath">@floofykath</a></dd>
+            <dd><a href="https://twitter.com/floofywitch">@floofywitch</a></dd>
             <dt>Telegram <i class="fab fa-telegram-plane"></i></dt>
-            <dd><a href="https://t.me/floofykath">floofykath</a></dd>
+            <dd><a href="https://t.me/floofywitch">floofywitch</a></dd>
             <dt>Discord <i class="fab fa-discord"></i></dt>
             <dd>katrin#3122</dd>
         </dl>
