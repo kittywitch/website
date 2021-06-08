@@ -101,9 +101,9 @@ title: kat
 
         <dl class="inline themed">
             <dt>Libera <i class="fas fa-comment-dots"></i></dt>
-            <dd>kat - <span class="clientfp">SPKI:SHA2-256:9d88af424931e828888eedb83ea9559c01e525bba3b0fa97c20ffe64cf018bd9</span></dd>
-            <dt>Espernet <i class="fas fa-comment-dots"></i></dt>
             <dd>kat - <span class="clientfp">955a0705ee05f1543eb9e1eb27691e15e5f579ff41939787dc23163460cfe4616f72b773ed2919791fdce320ee438b297dd85fbe8590a7bd16653cfac4d59b1e</span></dd>
+	    <dt>Espernet <i class="fas fa-comment-dots"></i></dt>
+            <dd>kat - <span class="clientfp">SPKI:SHA2-256:9d88af424931e828888eedb83ea9559c01e525bba3b0fa97c20ffe64cf018bd9</span></dd>
 
         </dl>
     </section>
