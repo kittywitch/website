@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600;700&display=swap');
-@import url('css/all.css');
+
+$line: #ccc;
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -13,7 +14,7 @@ html {
 	margin: 0;
 
 	font: 100%/1.5 'Josefin Sans', sans-serif;
-	
+
 	line-height: 1.5;
 
 	background: #eee;
@@ -71,7 +72,7 @@ ul.inline {
 
 	li {
 		display: inline-block;
-		
+
 	}
 }
 
@@ -101,93 +102,115 @@ main#front-page #logo {
 	margin-right: .5em;
 }
 
-section#identity-summary dl {
-	display: grid;
-	grid-template-columns: repeat(3, max-content);
+#logo-wrapper {
+	text-align: center;
+}
 
-	div {
-		display: grid;
-		padding: 0 1em;
-		line-height: 100%;
+div#top-wrapper {
+	padding-bottom: 1em;
+	border-bottom: 1px dashed $line;
+}
 
-		&:not(:last-child) {
-			border-right: 1px #000 solid;
-		}
+div#identity-summary {	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	div#dl-wrapper {
+		width: min-content;
+		margin: 0 auto;
+		dl {
+			display: grid;
+			grid-template-columns: repeat(3, max-content);
 
-		dt {
-			grid-column-start: 1;
-			font-weight: 600;
-			font-size: 80%;
-			vertical-align: middle;
+			div {
+				display: grid;
+				padding: 0 1em;
+				line-height: 100%;
 
-			&::after {
-				content: ": ";
-				margin-right: 1em;
+				&:not(:last-child) {
+					border-right: 1px #000 solid;
+				}
+
+				dt {
+					grid-column-start: 1;
+					font-weight: 600;
+					font-size: 80%;
+					vertical-align: middle;
+
+					&::after {
+						content: ": ";
+						margin-right: 1em;
+					}
+				}
+
+				dd {
+					grid-column-start: 2;
+					text-align: right;
+					margin: 0;
+				}
 			}
 		}
-		  
-		dd {
-			grid-column-start: 2;
-			text-align: right;
-			margin: 0;
-		}
 	}
 }
 
-i.fas, i.fab {
-	margin-right: .5em;
-	line-height: 1.5 !important;
+#icon-row { 
+	display: block;
+	width: max-content;
+	margin: 0 auto;
 }
 
-#icon-row {
-	display: inline-block;
-	margin-left: 1em;
-	i {
-		font-size: 125%;
-	}
+#icon-row svg { font-size: 125%; margin-right: .25em; }
+
+.grid {
+	display: grid;
 }
 
-dl.themed {
-	background: #ececec;
-	border-radius: .25em;
-
-	dt, dd {
-		padding: 1em;
-	}
-
-	i {
-		margin-left: .5em;
-		margin-right: 0;
-		vertical-align: bottom;
-	}
-	
-	dt {
-		text-align: right;
-		border-right: 1px dashed #ccc;
-	}
-
-	dd {
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-
-	dt:not(:last-of-type), dd:not(:last-of-type) {
-		border-bottom: 1px solid #ccc;
-	}
+.grid-front {
+	grid-template-columns: 300px auto;
 }
 
 dl.inline {
 	display: grid;
 	margin: 0;
-	grid-template-columns: minmax(8.5rem, max-content);
-		dt {
-			grid-column-start: 1;
-		}
-		  
-		dd {
-			grid-column-start: 2;
-			margin: 0;
-		}
+	grid-template-columns: minmax(auto, max-content);
+	dt {
+		grid-column-start: 1;
+	}
+
+	dd {
+		grid-column-start: 2;
+		margin: 0;
+	}
+}
+
+.clientfp {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+dl.themed {
+	dt, dd {
+		padding: .5em;
+	}
+
+	svg {
+		margin-left: .5em;
+	}
+
+	dt {
+		text-align: right;
+		border-right: 1px dashed $line;
+	}
+
+	dd {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	dt:not(:last-of-type), dd:not(:last-of-type) {
+		border-bottom: 1px solid $line;
+	}
 }
 
 section#identity-summary ul {
@@ -221,7 +244,6 @@ a#home {
 }
 
 .project {
-	margin-right: .25em;
 	display: inline;
 }
 
