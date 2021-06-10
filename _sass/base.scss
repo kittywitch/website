@@ -248,12 +248,8 @@ a#home {
 }
 
 @media only screen and (max-width: 800px) {
-	section#identity-summary dl {
+	.grid {
 		display: block;
-
-		div:not(:last-child) {
-			border-right: none;
-		}
 	}
 
 	#avatar {
