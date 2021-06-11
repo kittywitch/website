@@ -19,7 +19,7 @@ title: kat
         <dl>
             <div>
                 <dt>Age</dt>
-                <dd>21</dd>
+                <dd>22</dd>
             </div>
             <div>
                 <dt>Pronouns</dt>
