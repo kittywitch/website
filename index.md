@@ -97,15 +97,33 @@ title: kat
     <section id="irc">
         <h2>IRC</h2>
 
-	<p>Client certificate fingerprints are provided. View source for their full content (unabridged).</p>
-
-        <dl class="inline themed">
-            <dt>Libera <i class="fas fa-comment-dots"></i></dt>
-            <dd>kat - <span class="clientfp">955a0705ee05f1543eb9e1eb27691e15e5f579ff41939787dc23163460cfe4616f72b773ed2919791fdce320ee438b297dd85fbe8590a7bd16653cfac4d59b1e</span></dd>
-	    <dt>Espernet <i class="fas fa-comment-dots"></i></dt>
-            <dd>kat - <span class="clientfp">SPKI:SHA2-256:9d88af424931e828888eedb83ea9559c01e525bba3b0fa97c20ffe64cf018bd9</span></dd>
-
-        </dl>
+	<p>Client certificate fingerprints are provided. On network, they may be obtained with <code>/whois &lt;nick&gt;</code> for comparison.</p>
+<div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1"><span>Libera <i class="fas fa-comment-dots"></i></span></label>
+        <div class="tab-content">
+          <dl>
+	  <dt>Nickname</dt>
+	  <dd>kat</dd>
+	  <dt>Client Certificate Fingerprint</dt>
+	  <dd><code>955a0705ee05f1543eb9e1eb27691e15e5f579ff41939787dc23163460cfe4616f72b773ed2919791fdce320ee438b297dd85fbe8590a7bd16653cfac4d59b1e</code></dd>
+	  </dl>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2"><span>Espernet <i class="fas fa-comment-dots"></i></span></label>
+        <div class="tab-content">
+          <dl>
+	  <dt>Nickname</dt>
+	  <dd>kat</dd>
+	  <dt>Client Certificate Fingerprint</dt>
+          <dd><code>SPKI:SHA2-256:9d88af424931e828888eedb83ea9559c01e525bba3b0fa97c20ffe64cf018bd9</code></dd>
+	  </dl>
+        </div>
+      </div>
+    </div>
     </section>
 
     <section id="git">

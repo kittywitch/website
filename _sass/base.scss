@@ -243,10 +243,98 @@ a#home {
 	font-weight: 600
 }
 
+code {
+	display: inline-block;
+	border-radius: .3em;
+	padding: .25em .75em;
+	background: #ccc;
+	color: darken(#693699, 10%);
+	overflow-wrap: anywhere;
+	text-indent: 0;
+}
 .project {
 	display: inline;
 }
 
+
+.tab {
+	width: 100%;
+	color: #111;
+	overflow: hidden;
+	word-wrap: break-word;
+	svg {
+		margin-left: .5em;
+	}
+	dl {
+		margin: 0;
+		dt, dd {
+			margin-bottom: .5em;
+		}
+		dt {
+			font-weight: 600;
+		}
+		dd {
+			margin-left: 1em;
+		}
+	}
+	&-label {
+		display: flex;
+		justify-content: space-between;
+		padding: 1em;
+		background: #bbb;
+		font-weight: bold;
+		cursor: pointer;
+		/* Icon */
+		&:hover {
+			background: darken(#bbb, 10%);
+		}
+		&::after {
+			content: "\276F";
+			width: 1em;
+			height: 1em;
+			text-align: center;
+			transition: all .35s;
+		}
+	}
+	&-content {
+		max-height: 0;
+		padding: 0 1em;
+		color: #333;
+		background: #f0f0f0;
+		transition: all .35s;
+	}
+	&-close {
+		display: flex;
+		justify-content: flex-end;
+		padding: 1em;
+		font-size: 0.75em;
+		background: #bbb;
+		cursor: pointer;
+		&:hover {
+			background: darken(#bbb, 10%);
+		}
+	}
+}
+
+// :checked
+input:checked {
+	+ .tab-label {
+		background: darken(#bbb, 10%);
+		&::after {
+			transform: rotate(90deg);
+		}
+	}
+	~ .tab-content {
+		max-height: 100vh;
+		padding: 1em;
+	}
+}
+
+input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
 @media only screen and (max-width: 800px) {
 	.grid {
 		display: block;
