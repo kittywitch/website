@@ -223,10 +223,6 @@ section#identity-summary ul {
 
 section {
 	margin: .5em 0;
-
-	p {
-		text-indent: 1em;
-	}
 }
 
 a, a:link {
@@ -257,62 +253,15 @@ code {
 }
 
 
-.tab {
-	width: 100%;
-	color: #111;
-	overflow: hidden;
-	word-wrap: break-word;
-	svg {
-		margin-left: .5em;
-	}
-	dl {
-		margin: 0;
-		dt, dd {
-			margin-bottom: .5em;
-		}
-		dt {
-			font-weight: 600;
-		}
-		dd {
-			margin-left: 1em;
+details {
+	summary {
+		padding-bottom: .5em;
+		svg {
+			margin-left: .5em;
 		}
 	}
-	&-label {
-		display: flex;
-		justify-content: space-between;
-		padding: 1em;
-		background: #bbb;
-		font-weight: bold;
-		cursor: pointer;
-		/* Icon */
-		&:hover {
-			background: darken(#bbb, 10%);
-		}
-		&::after {
-			content: "\276F";
-			width: 1em;
-			height: 1em;
-			text-align: center;
-			transition: all .35s;
-		}
-	}
-	&-content {
-		max-height: 0;
-		padding: 0 1em;
-		color: #333;
-		background: #f0f0f0;
-		transition: all .35s;
-	}
-	&-close {
-		display: flex;
-		justify-content: flex-end;
-		padding: 1em;
-		font-size: 0.75em;
-		background: #bbb;
-		cursor: pointer;
-		&:hover {
-			background: darken(#bbb, 10%);
-		}
+	&[open] summary {
+		border-bottom: 1px dashed $line;
 	}
 }
 
