@@ -45,7 +45,7 @@ h1:first-of-type {
 }
 
 .container {
-	max-width: 60rem;
+	max-width: 55rem;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -56,12 +56,6 @@ h1:first-of-type {
 
 #page-footer, #page-header {
 	text-align: center;
-}
-
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 ul.inline {
@@ -85,7 +79,6 @@ ul.inline-separated li:not(:last-child)::after { content: ' - '; }
 #avatar {
 	max-width: 300px;
 	border: 2px solid #ccc;
-	float: left;
 	margin-right: 1em;
 }
 
@@ -313,6 +306,14 @@ input {
 				width: 100%;
 				border-right: none !important;
 			}
+		}
+	}
+}
+
+.blog-post-list {
+	li {
+		*:not(:first-child):before {
+			content: " - ";
 		}
 	}
 }
