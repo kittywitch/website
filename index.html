@@ -2,17 +2,16 @@
 layout: page-no-title
 title: kat
 ---
-<!-- TODO: Move to SVG FontAwesome, move to locally hosting those Google Fonts. -->
 
 <main id="front-page" class="container">
 	<div class="grid grid-front" id="top-wrapper">
 
-		<img src="/assets/avatar.jpg" id="avatar"/>
+		<img src="/assets/system-avatar.png" id="avatar"/>
 		<div id="identity-summary">
 			<div>
 
 				<div id="logo-wrapper">
-					<img src="/assets/logo.png" id="logo"/><h1>katrin "kat" witch</h1> 
+					<img src="/assets/logo.png" id="logo"/><h1>kittywitch</h1>
 				</div>
 
 				<div id="dl-wrapper">
@@ -22,10 +21,6 @@ title: kat
 							<dd>22</dd>
 						</div>
 						<div>
-							<dt>Pronouns</dt>
-							<dd>she/her</dd>
-						</div>
-						<div>
 							<dt>Location</dt>
 							<dd>London, UK</dd>
 						</div>
@@ -33,33 +28,79 @@ title: kat
 				</div>
 
 				<div id="icon-row">
-					<i class="fas fa-transgender-alt"></i><i class="fas fa-venus"></i><i class="fas fa-venus-double"></i> <i class="fas fa-cat"></i> <i class="fas fa-hat-wizard"></i>
+					<i class="fas fa-users-cog"></i><i class="fas fa-transgender-alt"></i><i class="fas fa-venus"></i><i class="fas fa-venus-double"></i> <i class="fas fa-cat"></i> <i class="fas fa-hat-wizard"></i>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<section id="projects">
-		<h2>Projects</h2>
+	<section id="navigation">
+		<h2>Navigation</h2>
 
-		<p>More details can be found on my GitHub and in <a href="https://github.com/kittywitch/kittywitch">kittywitch/kittywitch</a>.</p>
+		<ul>
+			<li><a href="#identity">Identity</a></li>
+			<ul>
+				<li><a href="#kat">kat</a></li>
+				<li><a href="#kairi">Kairi</a></li>
+			</ul>
+			<li><a href="#contact">Social + Contact</a></li>
+			<ul>
+				<li><a href="#discord">Discord</a><?li>
+					<li><a href="#twitter">Twitter</a></li>
+					<li><a href="#matrix">Matrix</a></li>
+					<li><a href="#xmpp">XMPP</a></li>
+					<li><a href="#irc">IRC</a></li>
+			</ul>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#git">Git</a></li>
+			<li><a href="#avatars">Avatars</a></li>
+		</ul>
+	</section>
 
-		<dl>
-			<div>
-				<dt>
-					<div class="project"><i class="fab fa-linux"></i> nixfiles</div>
-					<a href="https://github.com/kittywitch/nixfiles"><i class="fab fa-github-alt"></i></a>
-					<a href="https://git.kittywit.ch/kat/nixfiles"><i class="fab fa-git-alt"></i></a>
-				</dt>
-				<dd>The NixOS + infrastructure configuration I use in production.</dd>
-			</div>
-		</dl>
+	<section id="identity">
+		<h2>Identity</h2>
+
+		<p></p>
+
+		<section id="kat">
+			<h3>kat <i class="fas fa-user color-kat"></i></h3>
+
+			<img src="/assets/kat-avatar.png" class="member-avatar bg-kat"/>
+
+			<dl class="inline themed">
+				<dt>Capitalization</dt>
+				<dd>None</dd>
+				<dt>Pronouns</dt>
+				<dd><a href="https://pronoun.is/she">she</a>, <a href="https://pronoun.is/mew/mew/mews/mews/mewself">mew/mews</a> or <a href="https://pronoun.is/they/.../themself">they (singular)</a></dd>
+				<dt>Gender</dt>
+				<dd>Demigirl</dd>
+				<dt>Kin</dt>
+				<dd>Cat</dd>
+			</dl>
+		</section>
+
+		<section id="kairi">
+			<h3>Kairi <i class="fas fa-user color-kairi"></i></h3>
+
+			<img src="/assets/kairi-avatar.png" class="member-avatar bg-kairi"/>
+
+			<dl class="inline themed">
+				<dt>Capitalization</dt>
+				<dd>First letter</dd>
+				<dt>Pronouns</dt>
+				<dd><a href="https://pronoun.is/xe">xe</a> or <a href="https://pronoun.is/they/.../themself">they (singular)</a></dd>
+				<dt>Gender</dt>
+				<dd>Agender</dd>
+				<dt>Kin</dt>
+				<dd>Fox</dd>
+			</dl>
+		</section>
 	</section>
 
 	<section id="contact">
 		<h2>Social + Contact</h2>
 
-		<p>I prefer to use Matrix and XMPP where possible, due to encryption. Other provided methods are fine, however!</p>
+		<p>We prefer to use Matrix and XMPP where possible, due to encryption. Other provided methods are fine, however!</p>
 
 		<dl class="inline themed">
 			<dt>Matrix <i class="fas fa-comments"></i></dt>
@@ -72,13 +113,22 @@ title: kat
 			<dd><a href="/assets/pubkey.asc">01F50A29D4AA91175A11BDB17248991EFA8EFBEE</a></dd>
 			<dt>Fediverse <i class="fab fa-mastodon"></i></dt>
 			<dd><a rel="me" href="https://vulpine.club/@kat">@kat@vulpine.club</a></dd>
-			<dt>Twitter <i class="fab fa-twitter"></i></dt>
-			<dd><a href="https://twitter.com/floofywitch">@floofywitch</a></dd>
 			<dt>Telegram <i class="fab fa-telegram-plane"></i></dt>
 			<dd><a href="https://t.me/floofywitch">floofywitch</a></dd>
-			<dt>Discord <i class="fab fa-discord"></i></dt>
-			<dd>katrin#3122</dd>
 		</dl>
+
+		<section id="discord">
+			<h3>Discord</h3>
+
+			<p>We use PluralKit most places where it matters.</p>
+
+			<dl class="inline themed">
+				<dt>kat <i class="fab fa-discord"></i></dt>
+				<dd>katrin#1312</dd>
+				<dt>Kairi <i class="fab fa-discord"></i></dt>
+				<dd>Kairi#1312</dd>
+			</dl>
+		</section>
 
 		<section id="twitter">
 			<h3>Twitter</h3>
@@ -86,11 +136,13 @@ title: kat
 			<p>Fediverse and Twitter mutuals are welcome to follow the private account.</p>
 
 			<dl class="inline themed">
-				<dt>Public <i class="fas fa-lock-open"></i></dt>
+				<dt>Public (kat) <i class="fas fa-lock-open"></i></dt>
 				<dd><a href="https://twitter.com/floofywitch">@floofywitch</a></dd>
-				<dt>Private <i class="fas fa-lock"></i></dt>
+				<dt>Public (Kairi) <i class="fas fa-lock-open"></i></dt>
+				<dd><a href="https://twitter.com/kairiwitch">@kairiwitch</a></dd>
+				<dt>Private (Shared) <i class="fas fa-lock"></i></dt>
 				<dd><a href="https://twitter.com/shroudedwitch">@shroudedwitch</a></dd>
-				<dt>After Dark <i class="fas fa-exclamation-triangle"></i></dt>
+				<dt>After Dark (Shared) <i class="fas fa-exclamation-triangle"></i></dt>
 				<dd><a href="https://twitter.com/exhibitedwitch">@exhibitedwitch</a></dd>
 			</dl>
 		</section>
@@ -130,7 +182,7 @@ title: kat
 
 			<p>The details and PGP key are provided <a href="#contact">above</a>.</p>
 
-			<p>My setups support OMEMO and OpenPGP.</p>
+			<p>Our setups support OMEMO and OpenPGP.</p>
 		</section>
 
 		<section id="irc">
@@ -159,6 +211,23 @@ title: kat
 		</section>
 	</section>
 
+	<section id="projects">
+		<h2>Projects</h2>
+
+		<p>More details can be found on our GitHub and in <a href="https://github.com/kittywitch/kittywitch">kittywitch/kittywitch</a>.</p>
+
+		<dl>
+			<div>
+				<dt>
+					<div class="project"><i class="fab fa-linux"></i> nixfiles</div>
+					<a href="https://github.com/kittywitch/nixfiles"><i class="fab fa-github-alt"></i></a>
+					<a href="https://git.kittywit.ch/kat/nixfiles"><i class="fab fa-git-alt"></i></a>
+				</dt>
+				<dd>The NixOS + infrastructure configuration we use in production.</dd>
+			</div>
+		</dl>
+	</section>
+
 	<section id="git">
 		<h2>Git</h2>
 
@@ -170,5 +239,21 @@ title: kat
 			<dt>GitLab <i class="fab fa-gitlab"></i></dt>
 			<dd><a href="https://gitlab.com/kittywitch">@kittywitch</a></dd>
 		</dl>
+	</section>
+
+	<section id="avatars">
+		<h2>Avatars</h2>
+
+		<h3>Picrews</h3>
+
+		<ul>
+			<li>System Avatar - <a href="https://picrew.me/image_maker/625804">625804</a></li>
+			<li>kat's Avatar - <a href="https://picrew.me/image_maker/5090">5090</a></li>
+			<li>Kairi's Avatar - <a href="https://picrew.me/image_maker/5209">5209</a></li>
+		</ul>
+	</section>
+
+	<section id="scroll">
+		<a class="scroller" href="#page-header">Jump to Top</a>
 	</section>
 </main>
